@@ -1,0 +1,19 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/rmease/.rubies/ruby-2.7.7/bin/ruby -I /Users/rmease/.rubies/ruby-2.7.7/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1rbu39p sitelibdir\=./.gem.20230126-84813-1rbu39p clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1rbu39p sitelibdir\=./.gem.20230126-84813-1rbu39p
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1rbu39p sitelibdir\=./.gem.20230126-84813-1rbu39p install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20230126-84813-1rbu39p/skiptrace/internal
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1rbu39p sitelibdir\=./.gem.20230126-84813-1rbu39p clean

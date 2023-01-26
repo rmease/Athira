@@ -1,0 +1,27 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+/Users/rmease/.rubies/ruby-2.7.7/bin/ruby -I /Users/rmease/.rubies/ruby-2.7.7/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1pzk6uv sitelibdir\=./.gem.20230126-84813-1pzk6uv clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1pzk6uv sitelibdir\=./.gem.20230126-84813-1pzk6uv
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU  -I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/gdbm/include -I/opt/homebrew/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+wrapper.c:182:60: warning: declaration of 'struct crypt_data' will not be visible outside of this function [-Wvisibility]
+char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+                                                           ^
+1 warning generated.
+linking shared-object bcrypt_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1pzk6uv sitelibdir\=./.gem.20230126-84813-1pzk6uv install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20230126-84813-1pzk6uv
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1pzk6uv sitelibdir\=./.gem.20230126-84813-1pzk6uv clean

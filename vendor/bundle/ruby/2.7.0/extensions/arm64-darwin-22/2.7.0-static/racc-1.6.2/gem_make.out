@@ -1,0 +1,21 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+/Users/rmease/.rubies/ruby-2.7.7/bin/ruby -I /Users/rmease/.rubies/ruby-2.7.7/lib/ruby/site_ruby/2.7.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1lbtl1r sitelibdir\=./.gem.20230126-84813-1lbtl1r clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1lbtl1r sitelibdir\=./.gem.20230126-84813-1lbtl1r
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1lbtl1r sitelibdir\=./.gem.20230126-84813-1lbtl1r install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230126-84813-1lbtl1r/racc
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1lbtl1r sitelibdir\=./.gem.20230126-84813-1lbtl1r clean

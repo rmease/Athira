@@ -1,0 +1,25 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/date-3.3.3/ext/date
+/Users/rmease/.rubies/ruby-2.7.7/bin/ruby -I /Users/rmease/.rubies/ruby-2.7.7/lib/ruby/site_ruby/2.7.0 extconf.rb
+checking for rb_category_warn()... no
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1tl40vp sitelibdir\=./.gem.20230126-84813-1tl40vp clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1tl40vp sitelibdir\=./.gem.20230126-84813-1tl40vp
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1tl40vp sitelibdir\=./.gem.20230126-84813-1tl40vp install
+/usr/bin/install -c -m 0755 date_core.bundle ./.gem.20230126-84813-1tl40vp
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1tl40vp sitelibdir\=./.gem.20230126-84813-1tl40vp clean

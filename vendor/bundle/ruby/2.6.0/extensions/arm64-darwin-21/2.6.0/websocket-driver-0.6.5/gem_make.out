@@ -1,0 +1,16 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/opt/homebrew/opt/ruby@2.6/bin/ruby -I /opt/homebrew/Cellar/ruby@2.6/2.6.10/lib/ruby/2.6.0 -r ./siteconf20230126-60935-auvxzz.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230126-60935-flph

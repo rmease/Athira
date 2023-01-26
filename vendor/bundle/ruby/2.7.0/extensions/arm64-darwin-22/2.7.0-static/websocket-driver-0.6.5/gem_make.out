@@ -1,0 +1,19 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/rmease/.rubies/ruby-2.7.7/bin/ruby -I /Users/rmease/.rubies/ruby-2.7.7/lib/ruby/site_ruby/2.7.0 extconf.rb
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1nrak0t sitelibdir\=./.gem.20230126-84813-1nrak0t clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1nrak0t sitelibdir\=./.gem.20230126-84813-1nrak0t
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1nrak0t sitelibdir\=./.gem.20230126-84813-1nrak0t install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230126-84813-1nrak0t
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230126-84813-1nrak0t sitelibdir\=./.gem.20230126-84813-1nrak0t clean

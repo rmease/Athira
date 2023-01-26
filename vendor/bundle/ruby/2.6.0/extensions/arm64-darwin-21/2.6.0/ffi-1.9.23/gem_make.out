@@ -1,0 +1,413 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.23/ext/ffi_c
+/opt/homebrew/opt/ruby@2.6/bin/ruby -I /opt/homebrew/Cellar/ruby@2.6/2.6.10/lib/ruby/2.6.0 -r ./siteconf20230126-75349-1qyru54.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_closure_alloc()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for shlwapi.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR="
+compiling AbstractMemory.c
+AbstractMemory.c:1105:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+AbstractMemory.c:1105:17: note: '{' token is here
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+AbstractMemory.c:1105:17: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+AbstractMemory.c:1105:17: note: ')' token is here
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+AbstractMemory.c:1106:15: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_call = rb_intern("call");
+              ^~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+AbstractMemory.c:1106:15: note: '{' token is here
+    id_call = rb_intern("call");
+              ^~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+AbstractMemory.c:1106:15: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_call = rb_intern("call");
+              ^~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+AbstractMemory.c:1106:15: note: ')' token is here
+    id_call = rb_intern("call");
+              ^~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+AbstractMemory.c:1107:15: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_plus = rb_intern("+");
+              ^~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+AbstractMemory.c:1107:15: note: '{' token is here
+    id_plus = rb_intern("+");
+              ^~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+AbstractMemory.c:1107:15: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_plus = rb_intern("+");
+              ^~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+AbstractMemory.c:1107:15: note: ')' token is here
+    id_plus = rb_intern("+");
+              ^~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+6 warnings generated.
+compiling ArrayType.c
+compiling Buffer.c
+Buffer.c:266:45: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                            ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:45: note: '{' token is here
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                            ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:45: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                            ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:45: note: ')' token is here
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                            ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:72: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                                                       ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:72: note: '{' token is here
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                                                       ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:72: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                                                       ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:266:72: note: ')' token is here
+        return order == BIG_ENDIAN ? ID2SYM(rb_intern("big")) : ID2SYM(rb_intern("little"));
+                                                                       ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:413:29: note: expanded from macro 'ID2SYM'
+#define ID2SYM(x) RB_ID2SYM(x)
+                            ^
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:408:33: note: expanded from macro 'RB_ID2SYM'
+#define RB_ID2SYM(x) (rb_id2sym(x))
+                                ^
+Buffer.c:276:23: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            if (id == rb_intern("little")) {
+                      ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Buffer.c:276:23: note: '{' token is here
+            if (id == rb_intern("little")) {
+                      ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Buffer.c:276:23: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            if (id == rb_intern("little")) {
+                      ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Buffer.c:276:23: note: ')' token is here
+            if (id == rb_intern("little")) {
+                      ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+Buffer.c:279:30: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                             ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Buffer.c:279:30: note: '{' token is here
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                             ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Buffer.c:279:30: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                             ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Buffer.c:279:30: note: ')' token is here
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                             ^~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+Buffer.c:279:56: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                                                       ^~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Buffer.c:279:56: note: '{' token is here
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                                                       ^~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Buffer.c:279:56: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                                                       ^~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Buffer.c:279:56: note: ')' token is here
+            } else if (id == rb_intern("big") || id == rb_intern("network")) {
+                                                       ^~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+10 warnings generated.
+compiling Call.c
+Call.c:334:5: error: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    rbffi_thread_blocking_region(call_blocking_function, data, (void *) -1, NULL);
+    ^
+./Thread.h:78:39: note: expanded from macro 'rbffi_thread_blocking_region'
+# define rbffi_thread_blocking_region rb_thread_call_without_gvl
+                                      ^
+Call.c:492:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Call.c:492:17: note: '{' token is here
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Call.c:492:17: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Call.c:492:17: note: ')' token is here
+    id_to_ptr = rb_intern("to_ptr");
+                ^~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+Call.c:493:20: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_native = rb_intern("to_native");
+                   ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Call.c:493:20: note: '{' token is here
+    id_to_native = rb_intern("to_native");
+                   ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Call.c:493:20: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_to_native = rb_intern("to_native");
+                   ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Call.c:493:20: note: ')' token is here
+    id_to_native = rb_intern("to_native");
+                   ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+Call.c:494:21: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_map_symbol = rb_intern("__map_symbol");
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+Call.c:494:21: note: '{' token is here
+    id_map_symbol = rb_intern("__map_symbol");
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+Call.c:494:21: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+    id_map_symbol = rb_intern("__map_symbol");
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+Call.c:494:21: note: ')' token is here
+    id_map_symbol = rb_intern("__map_symbol");
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/ruby@2.6/2.6.10/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+6 warnings and 1 error generated.
+make: *** [Call.o] Error 1
+
+make failed, exit code 2

@@ -1,0 +1,16 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+/opt/homebrew/opt/ruby@2.6/bin/ruby -I /opt/homebrew/Cellar/ruby@2.6/2.6.10/lib/ruby/2.6.0 -r ./siteconf20230126-60935-2ymvhg.rb extconf.rb
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

@@ -1,0 +1,18 @@
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+/opt/homebrew/opt/ruby@2.6/bin/ruby -I /opt/homebrew/Cellar/ruby@2.6/2.6.10/lib/ruby/2.6.0 -r ./siteconf20230126-71124-yrjjse.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/rmease/repos/personal/Athira/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230126-71124-1gi63cw/racc
