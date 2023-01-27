@@ -36,12 +36,12 @@ module.exports = {
         aggregateTimeout: 100
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel-loader',
-            query: {
-                presets: ['react', 'es2015']
+            options: {
+                presets: ['@babel/react', "@babel/preset-env"]
             }
         },
         {
