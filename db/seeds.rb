@@ -17,28 +17,28 @@ service1 = Service.create!(
     name: 'Finance & Accounting Transformation',
     short_description: 'Build a financial function for operational excellence',
     long_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet porttitor tortor. Maecenas mollis rhoncus lacus sed vehicula. Duis laoreet fermentum ex, nec scelerisque mauris cursus ac. Mauris vel euismod quam. Etiam auctor sapien cursus enim feugiat mattis. Aenean ac orci sit amet metus porta feugiat euismod in ligula. Curabitur sagittis rhoncus purus vitae feugiat. Cras volutpat id eros sit amet lobortis. Etiam sollicitudin lacus quis mauris mattis, nec aliquam nulla scelerisque. Curabitur lacinia at diam tincidunt porta. Duis eu facilisis erat, eget porta nunc.',
-    icon_url: 'http://www.gdurl.com/TVHd'
+    icon_url: 'https://www.gdurl.com/TVHd'
 )
 
 service2 = Service.create!(
     name: 'Tools for Management',
     short_description: 'Design and deploy effective tools for decision making',
     long_description: 'Proin blandit quam eros, nec mollis nibh scelerisque sed. Vestibulum auctor condimentum dolor nec pharetra. Aenean tempor mattis feugiat. Nunc dictum tincidunt velit, id faucibus lorem hendrerit id. Maecenas sed mollis sem, ac suscipit nisl. Nam placerat nulla vitae massa finibus hendrerit. Suspendisse semper risus augue, non efficitur diam tincidunt ullamcorper.',
-    icon_url: 'http://www.gdurl.com/8FqW'
+    icon_url: 'https://www.gdurl.com/8FqW'
 )
 
 service3 = Service.create!(
     name: 'Business Development',
     short_description: 'Identify and explore business growth opportunities',
     long_description: 'Fusce pretium, sem a ullamcorper auctor, velit magna vestibulum turpis, ut posuere mi ex a libero. Sed molestie venenatis turpis, non luctus erat porta id. Nullam sed orci et dolor hendrerit rhoncus sit amet in nisi. Morbi nunc dui, bibendum vel erat sed, lacinia mattis metus. Nam volutpat efficitur sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget ex pulvinar, euismod quam id, imperdiet libero.',
-    icon_url: 'http://www.gdurl.com/JFmf'
+    icon_url: 'https://www.gdurl.com/JFmf'
 )
 
 service4 = Service.create!(
     name: 'Diagnostic and Advisory Services',
     short_description: 'Assess your business and implement best practices for growth',
     long_description: 'Phasellus at semper sapien. Nam efficitur venenatis tortor, at convallis neque pharetra id. Ut a sapien ac velit condimentum dignissim. Donec sollicitudin consequat pulvinar. Etiam rhoncus ex id pharetra laoreet. In vehicula est a purus pulvinar, eu vulputate elit scelerisque. Nullam eu maximus felis, et vulputate massa. Duis faucibus sagittis est, vel rhoncus nulla ornare ut. Sed pellentesque orci ac arcu vulputate, eget venenatis nisl hendrerit.',
-    icon_url: 'http://www.gdurl.com/QUHu'
+    icon_url: 'https://www.gdurl.com/QUHu'
 )
 
 review1 = Review.create!(
@@ -47,7 +47,7 @@ review1 = Review.create!(
     reviewer_location: 'TODO Peacefirst Comapny Name',
     title: 'Review',
     body: 'Athira did wonders for our company. Our company culture has been focused and driven towards our new goals.',
-    logo_url: 'http://www.gdurl.com/ca_Z'
+    logo_url: 'https://www.gdurl.com/ca_Z'
 )
 
 review2 = Review.create!(
@@ -56,7 +56,7 @@ review2 = Review.create!(
     reviewer_location: 'TODO Datakind Company Name',
     title: 'Review',
     body: 'After a year of working with Athira, I have saved hundreds of thousands of dollars in scaling costs for services that I would have otherwise spent on pricey consultants.',
-    logo_url: 'http://www.gdurl.com/YDNB'
+    logo_url: 'https://www.gdurl.com/YDNB'
 )
 
 review3 = Review.create!(
@@ -93,37 +93,4 @@ image_carousel1 = ImageCarousel.create!(
     headlines: [ 'TODO Headline 1', 'TODO Headline 2', 'TODO Headline 3' ]
 )
 
-# image_carousel2 = ImageCarousel.create!(
-#     location: 'about',
-#     urls: [
-#         'https://images.unsplash.com/photo-1455793067932-146d5b4a694f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0a99a121c6a007e3cc9ecda129bb61a1&auto=format&fit=crop&w=934&q=80',
-#         'https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c1f57e313ec82598cfb80047483e93a&auto=format&fit=crop&w=933&q=80',
-#         'https://images.unsplash.com/photo-1518707101210-10794fcdc3f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d124d3625023f15aa18624f0295b4173&auto=format&fit=crop&w=1955&q=80',
-#         'https://images.unsplash.com/photo-1518008931783-51b25ba2ccc9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87a6a9889936a62f928eb3e67f348907&auto=format&fit=crop&w=1950&q=80'
-#     ],
-#     headlines: [ 'Your Business, Evolved' ]
-# )
-
-# image_carousel3 = ImageCarousel.create!(
-#     location: 'services',
-#     urls: [
-#         'https://images.unsplash.com/photo-1518557743312-e86ea8b29b3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a889fdfafc4123f38dabc056e8ba8b3b&auto=format&fit=crop&w=1955&q=80',
-#         'https://images.unsplash.com/photo-1504438652155-a421a09f1f1c?ixlib=rb-0.3.5&s=8051aaffbf40f1ecda174e95d5d7f90c&auto=format&fit=crop&w=1950&q=80',
-#         'https://images.unsplash.com/photo-1521508567009-a6d821b3db22?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f59eacb18a82d459d9be6ce4d81c8fa6&auto=format&fit=crop&w=1950&q=80',
-#         'https://images.unsplash.com/photo-1519458861917-ec46e733681b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e87a6e62cf9d86971837469c3e44a26a&auto=format&fit=crop&w=1950&q=80'
-#     ],
-#     headlines: [ 'Providing Services To Your Business' ]
-# )
-
-# image_carousel4 = ImageCarousel.create!(
-#     location: 'contact',
-#     urls: [
-#         'https://images.unsplash.com/photo-1505210069911-a8e20f39ae6f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5889fa8316c30ec614bfeeadaf9f1fe2&auto=format&fit=crop&w=963&q=80',
-#         'https://images.unsplash.com/photo-1506277450472-30e3f3f55129?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f1d9511266a5133052e7a7778f856171&auto=format&fit=crop&w=1950&q=80',
-#         'https://images.unsplash.com/photo-1492104387331-206462f14a88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=669f876b55701abd081133e601502ab3&auto=format&fit=crop&w=1950&q=80',
-#         'https://images.unsplash.com/photo-1504890283869-c3de3cea0c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea9ddbbfc4a373c1b0f92a50cd68e4d2&auto=format&fit=crop&w=1950&q=80'
-#     ],
-#     headlines: [ 'Get in touch' ]
-# )
-
-AdminUser.create!(email: 'rsmease@gmail.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'rsmease@gmail.com', password: 'password', password_confirmation: 'password')
