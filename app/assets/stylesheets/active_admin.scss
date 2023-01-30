@@ -20,6 +20,10 @@ $am-theme-backdrop: $primary-light;
 @import 'activeadmin/quill_editor/quill.snow';
 @import 'activeadmin/quill_editor_input';
 
+@import 'activeadmin/medium_editor/medium_editor';
+@import 'activeadmin/medium_editor_input';
+@import 'activeadmin/medium_editor/themes/default';
+
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //

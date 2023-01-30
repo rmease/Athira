@@ -16,7 +16,7 @@ permit_params :name, :title, :description, :headshot_url, :created_at, :updated_
         f.inputs do
             f.input :name
             f.input :title
-            f.input :description, as: :quill_editor
+            f.input :description, as: :medium_editor, input_html: { data: { options: '{"spellcheck":false,"toolbar":{"buttons":["bold","italic","underline","unorderedlist", "orderedlist" ]}}' } }
             f.input :headshot_url
         end
         f.actions

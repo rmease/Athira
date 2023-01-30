@@ -56,6 +56,8 @@ GEM
       kaminari (~> 1.0, >= 1.2.1)
       railties (>= 6.1, < 7.1)
       ransack (>= 2.1.1, < 4)
+    activeadmin_medium_editor (1.0.0)
+      activeadmin (~> 2.0)
     activeadmin_quill_editor (1.0.0)
       activeadmin (~> 2.0)
     activejob (7.0.4.2)
@@ -296,6 +298,7 @@ PLATFORMS
 DEPENDENCIES
   active_material
   activeadmin
+  activeadmin_medium_editor
   activeadmin_quill_editor
   annotate
   better_errors
