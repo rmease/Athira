@@ -34,7 +34,7 @@ gem 'jquery-rails'
 gem 'inherited_resources'
 gem 'activeadmin'
 gem 'active_material'
-gem 'activeadmin_quill_editor'
+gem 'activeadmin_quill_editor', '~> 1.0.0'
 gem 'devise'
 gem 'sendgrid-ruby'
 
