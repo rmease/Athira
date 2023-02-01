@@ -25,7 +25,7 @@ class LeaderIndexItem extends React.Component {
           </h2>
           <div
             className="leader-index-item__header-3"
-            dangerouslySetInnerHTML={{ __html: this.props.leader.description }}
+            dangerouslySetInnerHTML={{ __html: this.props.leader.rich_description.body }}
           />
         </div>
       </div>

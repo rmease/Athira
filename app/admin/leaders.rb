@@ -2,7 +2,7 @@ ActiveAdmin.register Leader do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :title, :description, :headshot_url, :created_at, :updated_at
+permit_params :name, :title, :description, :rich_description, :headshot_url, :created_at, :updated_at
 #
 # or
 #
@@ -16,7 +16,8 @@ permit_params :name, :title, :description, :headshot_url, :created_at, :updated_
         f.inputs do
             f.input :name
             f.input :title
-            f.input :description, as: :quill_editor
+            f.input :description
+            f.input :rich_description, as: :action_text
             f.input :headshot_url
         end
         f.actions
