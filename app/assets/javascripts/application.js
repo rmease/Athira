@@ -14,3 +14,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+//= require 'trix/dist/trix'
+//= require '@rails/actiontext/app/javascript/actiontext/index'
