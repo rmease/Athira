@@ -37,11 +37,11 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.jsx?$/,
+            test: /\.?jsx?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel-loader',
             options: {
-                presets: ['@babel/react', "@babel/preset-env"]
+            presets: ['@babel/preset-env', '@babel/preset-react']
             }
         },
         {
