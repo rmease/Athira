@@ -11,6 +11,6 @@ end
 
 private
   def leader_params
-      params.require(:leader).permit(:name, :description, :rich_description, :title, :headshot_url)
+      params.require(:leader).permit(:name, :description, :rich_description, :rich_long_description, :title, :headshot_url)
   end
 end

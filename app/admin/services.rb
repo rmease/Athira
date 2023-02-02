@@ -2,7 +2,7 @@ ActiveAdmin.register Service do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :short_description, :icon_url, :other_image_url, :created_at, :updated_at, :long_description
+permit_params :name, :short_description, :rich_long_description, :icon_url, :other_image_url, :created_at, :updated_at
 #
 # or
 #
@@ -12,11 +12,32 @@ permit_params :name, :short_description, :icon_url, :other_image_url, :created_a
 #   permitted
 # end
 
+    index do
+        id_column
+        column :name
+        column :short_description
+        column :rich_long_description
+        column :icon_url
+        actions
+    end
+
+    show do
+        attributes_table do
+            row :name
+            row :short_description
+            row :rich_description do |service|
+                service.rich_long_description.body
+            end
+            row :icon_url
+        end
+        active_admin_comments
+    end
+
     form do |f|
         f.inputs do
             f.input :name
             f.input :short_description
-            f.input :long_description, as: :quill_editor
+            f.input :rich_long_description, as: :action_text
             f.input :icon_url
         end
         f.actions
