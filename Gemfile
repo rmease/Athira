@@ -38,6 +38,7 @@ gem 'active_material'
 gem 'activeadmin_quill_editor'
 gem 'devise'
 gem 'sendgrid-ruby'
+gem 'aws-sdk-s3', '~> 1.118'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
