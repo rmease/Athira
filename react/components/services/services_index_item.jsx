@@ -23,9 +23,7 @@ export class ServicesIndexItemLeft extends React.Component {
           </div>
           <div
             className="services-index-item__header-3--description"
-            dangerouslySetInnerHTML={{
-              __html: this.props.service.long_description
-            }}
+            dangerouslySetInnerHTML={{ __html: this.props.service.rich_long_description.body }}
           />
         </div>
         <div className="border-maker" />
@@ -44,9 +42,7 @@ export class ServicesIndexItemRight extends React.Component {
         >
           <div
             className="services-index-item__header-3--description"
-            dangerouslySetInnerHTML={{
-              __html: this.props.service.long_description
-            }}
+            dangerouslySetInnerHTML={{ __html: this.props.service.rich_long_description.body }}
           />
           <div className="services-index-item__container--header">
             <div className="services-index-item__image-container">
@@ -89,9 +85,7 @@ export class ServicesIndexItemMobile extends React.Component {
           </div>
           <div
             className="services-index-item__header-3--description"
-            dangerouslySetInnerHTML={{
-              __html: this.props.service.long_description
-            }}
+            dangerouslySetInnerHTML={{ __html: this.props.service.rich_long_description.body }}
           />
         </div>
         <div className="border-maker" />
