@@ -2,7 +2,7 @@ ActiveAdmin.register Service do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :short_description, :rich_long_description, :icon_url, :other_image_url, :created_at, :updated_at
+permit_params :name, :short_description, :rich_long_description, :icon_url, :icon, :other_image_url, :created_at, :updated_at
 #
 # or
 #
@@ -38,9 +38,25 @@ permit_params :name, :short_description, :rich_long_description, :icon_url, :oth
             f.input :name
             f.input :short_description
             f.input :rich_long_description, as: :action_text
-            f.input :icon_url
+            f.input :icon, as: :file
         end
         f.actions
+    end
+
+    controller do
+        def update
+          @service = Service.find(permitted_params[:id])
+
+          @service.icon.purge
+          @service.icon.attach(permitted_params[:service][:icon])
+
+          @service.update(permitted_params[:service])
+    
+          if @service.save!
+          else
+            flash[:errors] = @service.errors.full_messages
+          end
+        end
     end
 
     before_save do |service|
