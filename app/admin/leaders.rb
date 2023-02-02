@@ -2,7 +2,7 @@ ActiveAdmin.register Leader do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-    permit_params :name, :title, :rich_description, :headshot_url, :created_at, :updated_at
+    permit_params :name, :title, :rich_description, :headshot_url, :headshot, :created_at, :updated_at
 #
 # or
 #
@@ -16,8 +16,9 @@ ActiveAdmin.register Leader do
         id_column
         column :name
         column :title
-        column :rich_description
-        column :headshort_url
+        column :rich_description do |leader|
+            leader.rich_description.body
+        end
         actions
     end
 
@@ -28,7 +29,6 @@ ActiveAdmin.register Leader do
             row :rich_description do |leader|
                 leader.rich_description.body
             end
-            row :headshot_url
         end
         active_admin_comments
     end
@@ -38,9 +38,27 @@ ActiveAdmin.register Leader do
             f.input :name
             f.input :title
             f.input :rich_description, as: :action_text
-            f.input :headshot_url
+            f.input :headshot, as: :file
         end
         f.actions
+    end
+
+    controller do
+        def update
+          @leader = Leader.find(permitted_params[:id])
+
+          @leader.headshot.purge
+          @leader.headshot.attach(permitted_params[:leader][:headshot])
+
+          @leader.update(permitted_params[:leader])
+    
+          if @leader.save!
+            # render admin_leader_path(@leader)
+          else
+            flash[:errors] = @leader.errors.full_messages
+            # render edit_admin_leader_path(@leader)
+          end
+        end
     end
 
     before_save do |leader|
