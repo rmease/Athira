@@ -1,4 +1,5 @@
 class Leader < ApplicationRecord
-    validates :name, :title, :description, :headshot_url, presence: true
+    validates :name, :title, presence: true
     has_rich_text :rich_description
+    has_one_attached :headshot, dependent: :destroy
 end
