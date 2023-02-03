@@ -11,6 +11,6 @@ end
 
 private
   def image_carousel_params
-      params.require(:image_carousel).permit(:location, :urls, :headline)
+      params.require(:image_carousel).permit(:location, :urls, :headlines)
   end
 end

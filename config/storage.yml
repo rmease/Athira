@@ -6,13 +6,12 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
-
 amazon:
   service: S3
-  access_key_id:  AKIAVZH4SBSY4LANRWGD
-  secret_access_key: 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
+  access_key_id:  AKIAVZH4SBSY7DYJWKOH
+  secret_access_key: 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
   region: us-east-1
-  bucket: bucketeer-acd7122d-50db-4c52-8d2a-ed8b8cb027d2
+  bucket: bucketeer-9939686b-1514-4f69-80a4-e02533784e4c
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
