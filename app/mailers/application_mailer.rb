@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'athira.mailer@gmail.com'
+  default from: 'athiramailerbot@gmail.com'
   layout 'mailer'
 end

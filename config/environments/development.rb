@@ -29,14 +29,14 @@ Rails.application.configure do
 
   # config.action_mailer.perform_deliveries = true
   # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.default_options = { from: 'athira.mailer@gmail.com' }
+  # config.action_mailer.default_options = { from: 'athiramailerbot@gmail.com' }
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {
   #   address:              'smtp.gmail.com',
   #   port:                 587,
-  #   user_name:            'athira.mailer@gmail.com',
-  #   password:             'yqdsrojifvzdjsux',
+  #   user_name:            'athiramailerbot@gmail.com',
+  #   password:             'SECRET',
   #   authentication:       'plain',
   #   enable_starttls_auto: true,
   #   openssl_verify_mode: 'none'
