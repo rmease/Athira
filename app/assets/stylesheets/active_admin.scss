@@ -7,64 +7,64 @@
 // // For example, to change the sidebar width:
 // // $sidebar-width: 242px;
 // // Active Admin's got SASS!
-// @import "utils/colors";
+@import "utils/colors";
 
-// $am-theme-primary: $primary-dark;
-// $am-theme-primary-700: $primary-light;
-// $am-theme-accent: $primary-light;
-// $am-theme-backdrop: $primary-light;
+$am-theme-primary: $primary-dark;
+$am-theme-primary-700: $primary-light;
+$am-theme-accent: $primary-light;
+$am-theme-backdrop: $primary-light;
 
-// @import "active_admin/mixins";
-// @import "active_material";
+@import "active_admin/mixins";
+@import "active_material";
 
-// @import "trix/dist/trix";
+@import "trix/dist/trix";
 
 // // Overriding any non-variable SASS must be done after the fact.
 // // For example, to change the default status-tag color:
 // //
 // //   .status_tag { background: #6090DB; }
-// #image_carousel_serialized_urls, #image_carousel_serialized_headlines {
-//     min-height: 300px;
-// }
+#image_carousel_serialized_urls, #image_carousel_serialized_headlines {
+    min-height: 300px;
+}
 
-// #image_carousel_serialized_urls_input, #image_carousel_serialized_headlines_input {
-//     margin-top: 0;
-//     padding-top: 0;
-//     .label {
-//         display: none;
-//     }
-//     &:textarea {
-//         min-height: 300px;
-//     }
-// }
+#image_carousel_serialized_urls_input, #image_carousel_serialized_headlines_input {
+    margin-top: 0;
+    padding-top: 0;
+    .label {
+        display: none;
+    }
+    &:textarea {
+        min-height: 300px;
+    }
+}
 
-// .inline-hints {
-//     font-size: 1em;
-//     color: $secondary-dark;
-// }
+.inline-hints {
+    font-size: 1em;
+    color: $secondary-dark;
+}
 
-// .active_admin {
-//     form trix-editor {
-//       min-height: 100px;
-//       margin-top: 10px;
-//       padding: 8px 10px 7px;
-//       background-color: white;
+.active_admin {
+    form trix-editor {
+      min-height: 100px;
+      margin-top: 10px;
+      padding: 8px 10px 7px;
+      background-color: white;
   
-//       &:focus {
-//         border: 1px solid #99a2aa;
-//         box-shadow: 0 0 4px #99a2aa;
-//         outline: none;
-//       }
-//     }
+      &:focus {
+        border: 1px solid #99a2aa;
+        box-shadow: 0 0 4px #99a2aa;
+        outline: none;
+      }
+    }
   
-//     form .trix-dialogs .trix-dialog--link {
-//       margin-top: 10px;
-//       margin-bottom: 10px;
-//       padding: 10px;
-//       background-color: #eeeeee;
+    form .trix-dialogs .trix-dialog--link {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #eeeeee;
   
-//       .trix-button-group {
-//         margin-top: 10px;
-//       }
-//     }
-//   }
+      .trix-button-group {
+        margin-top: 10px;
+      }
+    }
+  }
