@@ -70,7 +70,7 @@
 
 .services-index-item__header-3--description {
     color: $primary-dark;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1.3px;
     line-height: 1.65;
 }
@@ -136,10 +136,6 @@
     }
     .services-index-item__header-3--name:after {
         display: none;
-    }
-    .services-index-item__header-3--description>p {
-        padding: 0 0 16px 0;
-        text-align: left;
     }
     .services-index-item__header-3--description>ul {
         margin-left: $gutter-65;

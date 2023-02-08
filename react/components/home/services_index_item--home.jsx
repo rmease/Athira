@@ -10,10 +10,17 @@ class ServicesIndexItem extends React.Component {
       : `/services#service-${this.props.service.id}`;
   }
 
+  scrollWithOffset = (el) => {
+    const HEADER_HEIGHT = 92;
+    const OFFSET_BENEATH_HEADER = 30;
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yCoordinate - (HEADER_HEIGHT + OFFSET_BENEATH_HEADER), behavior: 'smooth' }); 
+}
+
   render() {
     return (
       <Fade bottom duration={1500}>
-        <HashLink smooth to={this.parseAnchor()}>
+        <HashLink smooth to={this.parseAnchor()} scroll={(el) => this.scrollWithOffset(el)}>
           <div className="services-index-item__container--home">
             <div className="services-index-item__icon-container--home">
               <img
