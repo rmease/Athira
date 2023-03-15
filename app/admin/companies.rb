@@ -27,11 +27,21 @@ permit_params :name, :headline, :long_description, :short_description, :email_ad
         f.actions
     end
 
-    before_save do |company|
-        unless params[:company].nil? || params[:company][:about_image].nil?
-            company.about_image.purge
-            company.about_image.attach(permitted_params[:company][:about_image])
+    controller do
+        def update
+          @company = Company.find(permitted_params[:id])
+
+          @company.about_image.purge
+          @company.about_image.attach(permitted_params[:company][:about_image])
+
+          @company.update(permitted_params[:company])
+    
+          if @company.save!
+            # render admin_company_path(@company)
+          else
+            flash[:errors] = @company.errors.full_messages
+            # render edit_admin_company_path(@company)
+          end
         end
     end
-
 end
