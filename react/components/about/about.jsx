@@ -23,7 +23,7 @@ class About extends React.Component {
   }
 
   setImageURL() {
-    if (this.props.company && this.props.company.about_image_url && this.props.about_image_url.length) {
+    if (this.props.company && this.props.about_image_url.length) {
       return this.props.company.about_image_url;
     } else {
       return "";
