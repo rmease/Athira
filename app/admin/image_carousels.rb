@@ -2,7 +2,7 @@ ActiveAdmin.register ImageCarousel do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-    permit_params :location, :urls, :created_at, :updated_at, :headlines
+    permit_params :location, :urls, :created_at, :updated_at, :images, :headlines
 #
 # or
 #
@@ -20,11 +20,19 @@ ActiveAdmin.register ImageCarousel do
             f.inputs "Carousel URLs" do
                 f.input :serialized_urls, :as => :text, hint: "HINT: Save each URL on a separate line, separated by a line."
             end
+            f.input :images, as: :file, input_html: { multiple: true }
+            f.object.images.each do |image|
+             span image_tag(image)
+            end
         end
         f.actions
     end
 
     before_save do |image_carousel|
+        unless params[:image_carousel].nil? || params[:image_carousel][:images].nil?
+            image_carousel.images.purge
+            image_carousel.images.attach(params[:image_carousel][:images])
+        end
         unless params[:image_carousel].nil? || params[:image_carousel][:serialized_urls].nil?
             image_carousel.urls = params[:image_carousel][:serialized_urls].split("\r\n\r\n").map do |url|
                 if url.include?('https://drive.google.com')
