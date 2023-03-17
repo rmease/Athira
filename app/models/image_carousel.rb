@@ -1,5 +1,5 @@
 class ImageCarousel < ApplicationRecord
-    validates :location, :urls, :headlines, presence: true
+    validates :headlines, presence: true
     has_many_attached :images, dependent: :destroy
 
     def ordered_images

@@ -22,14 +22,6 @@ class About extends React.Component {
     this.props.getAllCompanies();
   }
 
-  setImageURL() {
-    if (this.props.company && this.props.about_image_url.length) {
-      return this.props.company.about_image_url;
-    } else {
-      return "";
-    }
-  }
-
   renderLeaders() {
     if (this.props.leaders && this.props.leaders.length) {
       return (
@@ -50,7 +42,7 @@ class About extends React.Component {
     return (
       <React.Fragment>
         <section className="hero__container vision-obstacles-execution-container">
-          <StaticHeroImage imageURL={this.setImageURL()} />
+          <StaticHeroImage imageURL={this.props.company?.about_image_url || ""} />
         </section>
         <section className="main__meta-container">
           <div className="summary__container--with-title">

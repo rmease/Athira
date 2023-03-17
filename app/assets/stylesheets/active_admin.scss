@@ -14,10 +14,11 @@ $am-theme-primary-700: $primary-light;
 $am-theme-accent: $primary-light;
 $am-theme-backdrop: $primary-light;
 
+// @import "active_admin"
 @import "active_admin/mixins";
-@import "active_material";
+// @import "active_material";
 
-@import "trix/dist/trix";
+// @import "trix/dist/trix";
 
 // // Overriding any non-variable SASS must be done after the fact.
 // // For example, to change the default status-tag color:
