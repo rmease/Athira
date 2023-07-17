@@ -10,3 +10,13 @@ Everything required for the was re-namespaced under /json. You might find some r
 
 precompile assets before pushing to Heroku
 Heroku will serve static assets
+
+## OUTSTANDING TODOS
+
+- full automation of site setup using rails db:seed
+- cleanup of unnecessary or outdated database columns
+- understanding image hosting via Heroku and how to improve image load times
+- fix issue with styles not loading on /admin
+- property secrets management
+- roll/update secret API keys for Sendgrid and Bucketeer
+- confirm that email is still working

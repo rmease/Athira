@@ -83,7 +83,6 @@ review3.logo.attach(
 
 Company.destroy_all
 
-# TODO hide LinkedIn and Facebook if they are null
 company1 = Company.create!(
     name: 'Athira',
     headline: 'Light The Fire, Grow Your Dream',
@@ -95,9 +94,9 @@ company1.about_image.attach(
     filename: 'about_image.png'
 )
 
+# TODO seed rich_description
 Leader.destroy_all
 
-# TODO seed rich_description
 leader1 = Leader.create!(
     name: 'M Ria Shah',
     title: 'Owner'
@@ -107,9 +106,9 @@ leader1.headshot.attach(
     filename: 'm_ria_shah.jpg'
 )
 
+# TODO remove location field, we are not using it
 ImageCarousel.destroy_all
 
-# TODO remove location field, we are not using it
 image_carousel1 = ImageCarousel.create!(
     location: 'home',
     headlines: [ 'Crafting business support solutions', 'To empower entrepreneurial organizations', 'Reach goals for sustainable growth' ]
@@ -127,9 +126,9 @@ image_carousel1.images.attach(
     filename: 'home_carousel3.png'
 )
 
+# TODO seed rich description
 Term.destroy_all
 
-# TODO seed rich description
 term1 = Term.create!(
     title: 'Privacy Policy'
 )

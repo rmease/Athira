@@ -8,12 +8,21 @@ class Footer extends React.Component {
         this.state = {
             currentYear: undefined
         }
+
+        this.defaultFacebookURL = "https://www.facebook.com"
+        this.defaultLinkedInURL = "https://www.linkedin.com"
     }
 
     componentDidMount() {
         this.props.getAllCompanies();
         this.props.getAllTerms();
         this.setState({ currentYear: new Date() });
+    }
+
+    renderCopyright() {
+        return (
+            <p>{`© ${this.state.currentYear ? this.state.currentYear.getFullYear() : ""} Athira, LLC`}</p>
+        )
     }
 
     renderTermsLink() {
@@ -25,20 +34,31 @@ class Footer extends React.Component {
         }
     }
 
+    renderFacebookIconIfCustomized() {
+        if (this.props.company && (this.props.company.facebook_url != this.defaultFacebookURL)) {
+            return (
+                <a href={this.props.company.facebook_url} target="_blank"><Typicons.TiSocialFacebookCircular /></a>
+            )
+        }   
+    }
+    renderLinkedInIconIfCustomized() {
+        if (this.props.company && (this.props.company.linkedin_url != this.defaultLinkedInURL)) {
+            return (
+                <a href={this.props.company.linkedin_url} target="_blank"><Typicons.TiSocialLinkedinCircular /></a>
+            )
+        }
+    }
+
     render() {
         return (
             <footer>
                 <section className="footer__legal">
-                    <p>{`© ${this.state.currentYear ? this.state.currentYear.getFullYear() : ""} Athira, LLC`}</p>
-                    {this.renderTermsLink()}
+                    { this.renderCopyright() }
+                    { this.renderTermsLink() }
                 </section>
                 <section className="footer__social">
-                    <a href={this.props.company ? this.props.company.linkedin_url : ''} target="_blank">
-                        <Typicons.TiSocialLinkedinCircular />
-                    </a>
-                    <a href={this.props.company ? this.props.company.facebook_url : ''} target="_blank">
-                        <Typicons.TiSocialFacebookCircular />
-                    </a>
+                    { this.renderFacebookIconIfCustomized() }
+                    { this.renderLinkedInIconIfCustomized() }
                 </section>
             </footer>
         )
