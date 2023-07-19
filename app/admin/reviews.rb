@@ -2,7 +2,7 @@ ActiveAdmin.register Review do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :reviewer_name, :reviewer_description, :reviewer_location, :title, :body, :logo_url, :logo, :created_at, :updated_at
+permit_params :company_name, :body, :logo_url, :logo, :created_at, :updated_at
 #
 # or
 #
@@ -14,10 +14,7 @@ permit_params :reviewer_name, :reviewer_description, :reviewer_location, :title,
 
     form do |f|
         f.inputs do
-            f.input :reviewer_name
-            f.input :reviewer_description
-            f.input :reviewer_location
-            f.input :title
+            f.input :company_name
             f.input :body
             f.input :logo, as: :file
         end

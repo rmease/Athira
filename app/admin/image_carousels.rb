@@ -2,7 +2,7 @@ ActiveAdmin.register ImageCarousel do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-    permit_params :location, :urls, :created_at, :updated_at, :images, :headlines
+    permit_params :urls, :created_at, :updated_at, :images, :headlines
 #
 # or
 #
@@ -13,7 +13,6 @@ ActiveAdmin.register ImageCarousel do
 # end
     form do |f|
         f.inputs do
-            f.input :location
             f.inputs "Carousel Headlines" do
                 f.input :serialized_headlines, :as => :text, hint: "HINT: Save each headline on a separate line, separated by a line."
             end

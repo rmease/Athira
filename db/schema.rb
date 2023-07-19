@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_15_133538) do
+ActiveRecord::Schema.define(version: 2023_07_19_011347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -91,7 +91,6 @@ ActiveRecord::Schema.define(version: 2023_03_15_133538) do
     t.text "short_description", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "splash_image_url", default: "", null: false
     t.string "phone_number", default: "", null: false
     t.string "email_address", default: "", null: false
     t.string "facebook_url", default: "https://www.facebook.com", null: false
@@ -100,7 +99,6 @@ ActiveRecord::Schema.define(version: 2023_03_15_133538) do
   end
 
   create_table "image_carousels", force: :cascade do |t|
-    t.string "location", null: false
     t.string "urls", default: [], null: false, array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -118,10 +116,7 @@ ActiveRecord::Schema.define(version: 2023_03_15_133538) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "reviewer_name"
-    t.string "reviewer_description"
-    t.string "reviewer_location"
-    t.string "title", default: "", null: false
+    t.string "company_name", default: "", null: false
     t.text "body", default: "", null: false
     t.string "logo_url"
     t.datetime "created_at", null: false
@@ -132,7 +127,6 @@ ActiveRecord::Schema.define(version: 2023_03_15_133538) do
     t.string "name", default: "", null: false
     t.text "short_description", default: "", null: false
     t.string "icon_url"
-    t.string "other_image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "long_description", default: "", null: false

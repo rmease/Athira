@@ -1,4 +1,4 @@
 class Review < ApplicationRecord
-    validates :title, :body, presence: true
+    validates :company_name, :body, presence: true
     has_one_attached :logo, dependent: :destroy
 end

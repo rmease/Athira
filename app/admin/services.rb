@@ -2,7 +2,7 @@ ActiveAdmin.register Service do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :short_description, :rich_long_description, :icon_url, :icon, :other_image_url, :created_at, :updated_at
+permit_params :name, :short_description, :rich_long_description, :icon_url, :icon, :created_at, :updated_at
 #
 # or
 #
