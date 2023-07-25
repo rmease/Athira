@@ -60,10 +60,4 @@ ActiveAdmin.register Leader do
           end
         end
     end
-
-    before_save do |leader|
-        unless params[:leader].nil? || params[:leader][:headshot_url].nil? || !params[:leader][:headshot_url].include?('https://drive.google.com')
-            leader.headshot_url = "https://drive.google.com/uc?export=view&id" + params[:leader][:headshot_url].split("id")[1]
-        end
-    end
 end

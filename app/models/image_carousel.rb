@@ -8,10 +8,6 @@ class ImageCarousel < ApplicationRecord
         images.sort_by{ |img| ordered_image_ids.index(img.id) || (img.id*100) }
     end
 
-    def serialized_urls
-        self.urls.join("\n\n")
-    end
-
     def serialized_headlines
         self.headlines.join("\n\n")
     end

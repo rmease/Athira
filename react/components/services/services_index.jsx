@@ -1,9 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import * as Material from 'react-icons/lib/md';
 
 import { ServicesIndexItemLeft, ServicesIndexItemRight, ServicesIndexItemMobile } from './services_index_item';
-import HeroCarousel from '../hero/hero_carousel';
 import Contact from '../contact/contact';
 
 class ServicesIndex extends React.Component {
@@ -19,7 +17,6 @@ class ServicesIndex extends React.Component {
 
     componentDidMount() {
         this.props.getAllServices();
-        this.props.getAllImageCarousels();
         this.props.getAllCompanies();
     }
 

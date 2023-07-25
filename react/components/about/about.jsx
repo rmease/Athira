@@ -1,12 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import * as Material from "react-icons/lib/md";
 
 import StaticHeroImage from "../hero/static_hero_image";
 import LeaderIndexItem from "./leader_index_item";
 import Contact from "../contact/contact";
-
-import Fade from "react-reveal/Fade";
 
 class About extends React.Component {
   constructor() {

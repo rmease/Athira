@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_07_19_011347) do
+ActiveRecord::Schema.define(version: 2023_07_25_230238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,11 +95,9 @@ ActiveRecord::Schema.define(version: 2023_07_19_011347) do
     t.string "email_address", default: "", null: false
     t.string "facebook_url", default: "https://www.facebook.com", null: false
     t.string "linkedin_url", default: "https://www.linkedin.com", null: false
-    t.string "about_image_url", default: "", null: false
   end
 
   create_table "image_carousels", force: :cascade do |t|
-    t.string "urls", default: [], null: false, array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "headlines", default: [], null: false, array: true
@@ -110,7 +108,6 @@ ActiveRecord::Schema.define(version: 2023_07_19_011347) do
     t.string "name", default: "", null: false
     t.string "title", default: "", null: false
     t.text "description", default: "", null: false
-    t.string "headshot_url", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -118,7 +115,6 @@ ActiveRecord::Schema.define(version: 2023_07_19_011347) do
   create_table "reviews", force: :cascade do |t|
     t.string "company_name", default: "", null: false
     t.text "body", default: "", null: false
-    t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -129,12 +125,10 @@ ActiveRecord::Schema.define(version: 2023_07_19_011347) do
     t.string "icon_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "long_description", default: "", null: false
   end
 
   create_table "terms", force: :cascade do |t|
     t.string "title", default: "", null: false
-    t.text "text", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

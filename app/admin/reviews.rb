@@ -2,7 +2,7 @@ ActiveAdmin.register Review do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :company_name, :body, :logo_url, :logo, :created_at, :updated_at
+permit_params :company_name, :body, :logo, :created_at, :updated_at
 #
 # or
 #
@@ -36,11 +36,4 @@ permit_params :company_name, :body, :logo_url, :logo, :created_at, :updated_at
           end
         end
     end
-
-    before_save do |review|
-        unless params[:review].nil? || params[:review][:logo_url].nil? || !params[:review][:logo_url].include?('https://drive.google.com')
-            review.logo_url = "https://drive.google.com/uc?export=view&id" + params[:review][:logo_url].split("id")[1]
-        end
-    end
-
 end

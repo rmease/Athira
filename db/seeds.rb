@@ -35,7 +35,7 @@ service1_description = '
         <li>Hiring and training staff</li>
     </ul>
 '
-ActionText::RichText.create!(record_type: 'Service', record_id: service1.id, name: 'rich_long_description', body: service1_description)
+ActionText::RichText.create!(record_type: 'Service', record_id: service1.id, name: 'rich_description', body: service1_description)
 
 service2 = Service.create!(
     name: 'Tools for Management',
@@ -60,7 +60,7 @@ service2_description = '
         <li>CLM implementation</li>
     </ul>
 '
-ActionText::RichText.create!(record_type: 'Service', record_id: service2.id, name: 'rich_long_description', body: service2_description)
+ActionText::RichText.create!(record_type: 'Service', record_id: service2.id, name: 'rich_description', body: service2_description)
 
 service3 = Service.create!(
     name: 'Business Development',
@@ -83,7 +83,7 @@ service3_description = '
         <li>Pricing strategy</li>
     </ul>
 '
-ActionText::RichText.create!(record_type: 'Service', record_id: service3.id, name: 'rich_long_description', body: service3_description)
+ActionText::RichText.create!(record_type: 'Service', record_id: service3.id, name: 'rich_description', body: service3_description)
 
 service4 = Service.create!(
     name: 'Diagnostic and Advisory Services',
@@ -108,7 +108,7 @@ service4_description = '
         <li>Business advisory</li>
     </ul>
 '
-ActionText::RichText.create!(record_type: 'Service', record_id: service4.id, name: 'rich_long_description', body: service4_description)
+ActionText::RichText.create!(record_type: 'Service', record_id: service4.id, name: 'rich_description', body: service4_description)
 
 Review.destroy_all
 

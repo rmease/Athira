@@ -1,5 +1,5 @@
 json.set! service.id do
-    json.extract! service, :id, :name, :short_description, :rich_long_description, :updated_at
+    json.extract! service, :id, :name, :short_description, :rich_description, :updated_at
     if service.icon.attached?
         json.icon_url url_for(service.icon)
     end

@@ -25,16 +25,6 @@ class Home extends React.Component {
         this.props.getAllImageCarousels();
     }
 
-    renderHeroBackground() {
-        if (this.props.company && this.props.company.splash_image_url) {
-            return {
-                'backgroundImage': `url(${this.props.company.splash_image_url})`
-            };
-        } else {
-            return {};
-        }
-    }
-
     renderServices() {
         if (this.props.services && this.props.services.length) {
             const ids = this.props.services.map(service => service.id)
@@ -63,6 +53,7 @@ class Home extends React.Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <React.Fragment>
                 <HeroCarousel

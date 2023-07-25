@@ -11,6 +11,6 @@ class Json::LeadersController < ApplicationController
 
 private
   def leader_params
-      params.require(:leader).permit(:name, :description, :rich_description, :rich_long_description, :title, :headshot_url, :headshot)
+      params.require(:leader).permit(:name, :rich_description, :title, :headshot)
   end
 end
