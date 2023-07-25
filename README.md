@@ -17,6 +17,6 @@ Heroku will serve static assets
 - cleanup of unnecessary or outdated database columns
 - understanding image hosting via Heroku and how to improve image load times
 - fix issue with styles not loading on /admin
-- property secrets management
+- proper secret API key management
 - roll/update secret API keys for Sendgrid and Bucketeer
 - confirm that email is still working

@@ -1,11 +1,11 @@
 ActiveAdmin.register Term do
 
-    permit_params :title, :text, :created_at, :updated_at
+    permit_params :title, :rich_description, :created_at, :updated_at
 
     form do |f|
         f.inputs do
             f.input :title
-            f.input :text, as: :quill_editor
+            f.input :rich_description, as: :action_text
         end
         f.actions
     end

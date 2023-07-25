@@ -23,7 +23,7 @@ class TermsIndex extends React.Component {
             return (
                 <React.Fragment>
                     {this.props.terms.map(term => {
-                        return <TermsIndexItem key={Math.random()} title={term.title} text={term.text} />
+                        return <TermsIndexItem key={Math.random()} title={term.title} rich_description={term.rich_description} />
                     })}
                 </React.Fragment>
             )

@@ -1,5 +1,5 @@
 @terms.each do |term|
     json.set! term.id do
-        json.extract! term, :id, :title, :text, :updated_at
+        json.extract! term, :id, :title, :rich_description, :updated_at
     end
 end

@@ -12,7 +12,7 @@ class TermsIndexItem extends React.Component {
                         {this.props.title}
                     </h4>
                     <div className="terms-index-item__description" dangerouslySetInnerHTML={
-                        { __html: this.props.text }
+                        { __html: this.props.rich_description.body }
                     } />
                 </Fade>
             </div>
