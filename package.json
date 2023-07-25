@@ -7,6 +7,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@rails/actiontext": "^6.1.7-2",
+    "active_material": "^2.0.2",
     "animate.css": "^3.6.1",
     "babel-loader": "^9.1.2",
     "babel-plugin-lodash": "^3.3.2",

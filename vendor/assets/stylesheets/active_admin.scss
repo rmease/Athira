@@ -14,9 +14,8 @@ $am-theme-primary-700: $primary-light;
 $am-theme-accent: $primary-light;
 $am-theme-backdrop: $primary-light;
 
-// @import "active_admin"
 @import "active_admin/mixins";
-// @import "active_material";
+@import "../../..//node_modules/active_material/src/stylesheets/active_material.scss";
 
 // @import "trix/dist/trix";
 

@@ -34,7 +34,6 @@ gem 'jquery-rails'
 # gem 'capistrano-rails', group: :development
 gem 'inherited_resources'
 gem 'activeadmin'
-gem 'active_material'
 gem 'activeadmin_quill_editor'
 gem 'devise'
 gem 'sendgrid-ruby'

@@ -24,4 +24,5 @@ bundle.js.map
 
 .vscode
 
-vendor/
+vendor/bundle
+vendor/cache
