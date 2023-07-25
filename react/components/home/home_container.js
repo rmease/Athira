@@ -14,7 +14,7 @@ const mapStateToProps = (state, ownProps) => ({
     services: _.values(state.services),
     reviews: _.values(state.reviews),
     company: _.values(state.companies)[0],
-    imageCarousel: _.values(state.imageCarousels).filter(imageCarousel => imageCarousel.location === 'home')
+    imageCarousel: _.values(state.imageCarousels)[0]
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

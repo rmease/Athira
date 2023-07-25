@@ -53,16 +53,13 @@ class Home extends React.Component {
     }
 
     render() {
-        console.log(this.props)
         return (
             <React.Fragment>
+                // This may break if we have more than one image carousel in the database
+                // When loading props, this only pulls in the first image carousel that is found
                 <HeroCarousel
-                    imageURLs={
-                        this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
-                    }
-                    headlines={
-                        this.props.imageCarousel.length ? this.props.imageCarousel[0].headlines : []
-                    }
+                    imageURLs={this.props.imageCarousel?.urls || []}
+                    headlines={this.props.imageCarousel?.headlines || []}
                 />
                 <section className="main__meta-container">
                     <div className="summary__container">

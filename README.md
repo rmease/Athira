@@ -13,10 +13,8 @@ Heroku will serve static assets
 
 ## OUTSTANDING TODOS
 
-- full automation of site setup using rails db:seed
-- cleanup of unnecessary or outdated database columns
+- full copy-over of privacy policy content
 - understanding image hosting via Heroku and how to improve image load times
-- fix issue with styles not loading on /admin
 - proper secret API key management
 - roll/update secret API keys for Sendgrid and Bucketeer
 - confirm that email is still working
