@@ -37,10 +37,8 @@ permit_params :name, :headline, :long_description, :short_description, :email_ad
           @company.update(permitted_params[:company])
     
           if @company.save!
-            # render admin_company_path(@company)
           else
             flash[:errors] = @company.errors.full_messages
-            # render edit_admin_company_path(@company)
           end
         end
     end

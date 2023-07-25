@@ -53,10 +53,8 @@ ActiveAdmin.register Leader do
           @leader.update(permitted_params[:leader])
     
           if @leader.save!
-            # render admin_leader_path(@leader)
           else
             flash[:errors] = @leader.errors.full_messages
-            # render edit_admin_leader_path(@leader)
           end
         end
     end
