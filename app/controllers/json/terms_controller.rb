@@ -12,6 +12,6 @@ class Json::TermsController < ApplicationController
     private
 
     def term_params
-        params.require(:term).permit(:title, :text)
+        params.require(:term).permit(:title, :rich_description)
     end
 end
