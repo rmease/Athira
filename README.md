@@ -13,7 +13,6 @@ Heroku will serve static assets
 
 ## OUTSTANDING TODOS
 
-- full copy-over of privacy policy content
 - understanding image hosting via Heroku and how to improve image load times
 - proper secret API key management
 - roll/update secret API keys for Sendgrid and Bucketeer
