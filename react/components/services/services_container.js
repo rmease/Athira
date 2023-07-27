@@ -11,13 +11,11 @@ import * as CompanyActions from '../../actions/company_actions';
 
 const mapStateToProps = (state, ownProps) => ({
     services: _.values(state.services),
-    company: _.values(state.companies)[0],
-    imageCarousel: _.values(state.imageCarousels).filter(imageCarousel => imageCarousel.location === 'services')
+    company: _.values(state.companies)[0]
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     getAllServices: () => dispatch(ServiceActions.getAllServices()),
-    getAllImageCarousels: () => dispatch(ImageCarouselActions.getAllImageCarousels()),
     getAllCompanies: () => dispatch(CompanyActions.getAllCompanies())
 });
 
