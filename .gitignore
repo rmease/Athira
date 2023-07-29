@@ -26,3 +26,5 @@ bundle.js.map
 
 vendor/bundle
 vendor/cache
+
+config/local_env.yml
