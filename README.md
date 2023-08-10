@@ -55,9 +55,17 @@ Debugging of React and JavaScript issue should be done in the browser console wi
 Encrypted keys and the like are stored locally using this setup:
 https://itnext.io/environment-variables-in-ruby-on-rails-17e4934cfd71
 
-Heroku keys are stored at the same environment variables.
+Heroku keys are stored at the same environment variables. Within the Heroku environments, customization of environment variables can be accomplised by following this guide:
+https://devcenter.heroku.com/articles/config-vars
+
+Some of the environment variables are set automatically when configuring a Heroku add-on or rolling the keys via the add-on service UI online. In such cases, the environment variables will be automatically reset, but it may be necessary to reseed the database using the seeds.rb file in order to have the desired attachmened stored with the correct credentials. After rolling the keys, redeploy the rails app and then run:
+
+`heroku run rails db:seed -a <athira-solutions|athira-solutions-staging>`
 
 ## Active Storage Configurations
 
 Active  Storage is used for direct storage and upload of images for the site. This configuration guide was used to set it up:
 https://devcenter.heroku.com/articles/active-storage-on-heroku
+
+The active storage keys required for S3 service are automatically set based on the Bucketeer configurations in the Heroku app environments (athira-solutions and athira-solution-staging). Local environment variables are stored using the set-up linked in the Sensitive Data Management section. Within the Heroku environments, customization of S3 service environment variables can be accomplised by following this guide:
+https://devcenter.heroku.com/articles/config-vars

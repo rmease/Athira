@@ -45,8 +45,8 @@ module.exports = {
             }
         },
         {
-            test: /\.(jpe?g|png|gif|svg)$/i,
-            type: 'asset/inline'
+            test: /\.(png|jp(e*)g|svg|gif)$/,
+            type: 'asset/resource'
         }
         ]
     },
