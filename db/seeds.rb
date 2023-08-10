@@ -147,8 +147,8 @@ company1 = Company.create!(
     long_description: 'Athira is a different kind of company. We craft business support solutions to help entrepreneurial organizations scale to meet new and more ambitious goals. Our approach is to quickly understand your growth challenges, design and implement tailored solutions, and equip your employees with the knowledge to operate independently and successfully. Our style is centered on collaboration and creativity, but with a dose of realism. We listen to our clients, help them build a strategy for growth, and provide them with the tools to make clear and effective decisions. Backed by hard-won experience and thought leadership, you can trust Athira to kindle new life into your organization.'
 )
 company1.about_image.attach(
-    io: File.open(File.join(Rails.root, 'app/assets/images/company/about_image.png')),
-    filename: 'about_image.png'
+    io: File.open(File.join(Rails.root, 'app/assets/images/company/about_image.svg')),
+    filename: 'about_image.svg'
 )
 
 # TODO seed rich_description
