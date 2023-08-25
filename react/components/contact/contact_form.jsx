@@ -3,6 +3,8 @@ import Fade from 'react-reveal';
 import Popup from 'reactjs-popup';
 import _ from 'lodash';
 
+import Contact from './contact';
+
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -87,6 +89,17 @@ class ContactForm extends React.Component {
   }
 
   render() {
+    return (
+      <section className="contact__form--container">
+        <Contact
+            email_address={this.props.company ? this.props.company.email_address : ''}
+            phone_number={this.props.company ? this.props.company.phone_number : ''}
+        />
+      </section>
+    )
+  }
+
+  deprecatedRender() {
     return (
       <section className="contact__form--container">
         <h1 className="contact__form--h1">Get in Touch</h1>

@@ -1,12 +1,5 @@
 # README
 
-## OUTSTANDING TODOS
-
-- understanding image hosting via Heroku and how to improve image load times
-- proper secret API key management
-- roll/update secret API keys for Sendgrid and Bucketeer
-- confirm that email is still working
-
 ## Deployment to Heroku
 
 The apps are configured under the team name `athira`. The two apps are named for their respective environments:
@@ -50,7 +43,7 @@ Common sources of trouble for the development application include:
 
 Debugging of React and JavaScript issue should be done in the browser console window. Please note that issues generated at the binding layer between Rails and React (namely, the Redux store) are not actively logged and may fail silently. So far, this has never been an issue. If you are seeing any confusing errors with unknown `props` or `props` with unexpected contenet formatting, I suggest installing a logging utility for Redux in order to monitor the health of containers/reduces and `props` content.
 
-## Sensitive Data  Managemenet
+## Sensitive Data Managemenet
 
 Encrypted keys and the like are stored locally using this setup:
 https://itnext.io/environment-variables-in-ruby-on-rails-17e4934cfd71
@@ -69,3 +62,7 @@ https://devcenter.heroku.com/articles/active-storage-on-heroku
 
 The active storage keys required for S3 service are automatically set based on the Bucketeer configurations in the Heroku app environments (athira-solutions and athira-solution-staging). Local environment variables are stored using the set-up linked in the Sensitive Data Management section. Within the Heroku environments, customization of S3 service environment variables can be accomplised by following this guide:
 https://devcenter.heroku.com/articles/config-vars
+
+## Email Form
+
+There is unused code in this codebase that used to power a ContactForm, which could be restored using a Heroku email server plugin like GridSend. We chose to retire this due to complexity and cost, and it was replaced with a simple contact notice and inline email address. To undo this hack, you'll need to update these files: `contact_form_container.js`, `contact_form.jsx`. If you are attempting to restore the email server, note that you will need access to the domain service provider account for athirasolutions.com, in order to configure the distribution of emails from that domain.
