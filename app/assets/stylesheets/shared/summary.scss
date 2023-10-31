@@ -2,7 +2,7 @@
 .summary__container {
     display: grid;
     width: 80vw;
-    max-width: 1007px;
+    max-width: $global-max-width * .8;
     margin: 99px 0 109px;
     align-items: center;
     justify-items: center;
