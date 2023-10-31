@@ -2,6 +2,7 @@
 .contact__container {
     display: grid;
     width: 100%;
+    max-width: $global-max-width;
     padding: 88px 0;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30 / 2;

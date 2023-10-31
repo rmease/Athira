@@ -4,6 +4,7 @@ header {
   grid-template-columns: auto auto;
   grid-template-rows: 1fr;
   width: 100%;
+  max-width: $global-max-width;
   height: 91px;
   background-color: $primary-dark;
   position: fixed;

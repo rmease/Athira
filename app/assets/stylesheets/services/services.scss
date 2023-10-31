@@ -2,6 +2,7 @@
 .services-index__container {
     display: grid;
     width: 100vw;
+    max-width: $global-max-width;
     margin-top: 91px;
     padding: 0 $gutter-30;
     box-sizing: border-box;
@@ -64,6 +65,7 @@
     display: block;
     border-bottom: 1px solid $primary-light;
     width: 50%;
+    max-width: $global-max-width / 2;
     margin: 12px auto;
     animation: 1.5s ease-out 0s 1 expandBorder;
 }
@@ -121,11 +123,13 @@
         align-items: center;
         margin: 45px 0;
         width: 80vw;
+        max-width: $global-max-width * 0.8;
     }
     .border-maker {
         height: 1px;
         border-bottom: 1px solid $primary-dark;
         width: 60vw;
+        max-width: $global-max-width * 0.6;
         margin: auto;
     }
     .services-index-item__container--header {
@@ -133,6 +137,7 @@
     }
     .services-index-item__header-3--name {
         width: 100%;
+        max-width: $global-max-width;
     }
     .services-index-item__header-3--name:after {
         display: none;

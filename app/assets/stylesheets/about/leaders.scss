@@ -1,6 +1,7 @@
 @import '../utils/*';
 .leaders-index__container {
     width: 100vw;
+    max-width: $global-max-width;
     display: grid;
     justify-content: center;
 }
@@ -10,7 +11,8 @@
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-65;
     padding: $gutter-65 $gutter-30;
-    width: 100wv;
+    width: 100vw;
+    max-width: 1600px;
     z-index: 1;
     justify-items: center;
     background-color: $primary-light;
@@ -31,6 +33,7 @@
     grid-row-gap: $gutter-30;
     justify-items: center;
     color: $primary-dark;
+    max-width: 80vw;
     & span {
         font-size: 16px !important;
     }

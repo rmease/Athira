@@ -42,6 +42,7 @@
     content: "";
     border-bottom: 1px solid $primary-dark;
     width: 50vw;
+    max-width: $global-max-width / 2;
     display: block;
     margin-top: 72px;
 }
