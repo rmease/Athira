@@ -27,6 +27,12 @@
     line-height: 1.21;
 }
 
+@media (min-width: 1800px) {
+    .reviews-index-item__header-4--home {
+        font-size: $baseline * 1.5;
+    }
+}
+
 .reviews-index-item__header-3--home {
     text-align: center;
     text-transform: uppercase;

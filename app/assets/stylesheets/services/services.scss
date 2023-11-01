@@ -155,3 +155,9 @@
         display: none;
     }
 }
+
+@media (min-width: 1800px) {
+    .services-index-item__header-3--description {
+        font-size: $baseline * 1.5 !important;
+    }
+}

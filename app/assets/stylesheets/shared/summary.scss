@@ -23,6 +23,12 @@
     line-height: 1.65;
 }
 
+@media (min-width: 1800px) {
+    .summary__header-3 {
+        font-size: $baseline * 1.
+    }
+}
+
 .summary__header-3 span,
 .summary__header-3 p {
     font-size: 20px;
