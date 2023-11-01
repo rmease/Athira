@@ -2,7 +2,7 @@
 .services-index__container {
     display: grid;
     width: 100vw;
-    max-width: $global-max-width;
+    max-width: $global-max-width * 0.6;
     margin-top: 91px;
     padding: 0 $gutter-30;
     box-sizing: border-box;
@@ -123,13 +123,13 @@
         align-items: center;
         margin: 45px 0;
         width: 80vw;
-        max-width: $global-max-width * 0.8;
+        max-width: ($global-max-width * 0.6) * 0.8;
     }
     .border-maker {
         height: 1px;
         border-bottom: 1px solid $primary-dark;
         width: 60vw;
-        max-width: $global-max-width * 0.6;
+        max-width: ($global-max-width * 0.6) * 0.6;
         margin: auto;
     }
     .services-index-item__container--header {
@@ -153,5 +153,11 @@
     }
     .services-index-item__header-3--description li:not(:last-of-type):after {
         display: none;
+    }
+}
+
+@media (min-width: 1800px) {
+    .services-index-item__header-3--description {
+        font-size: $baseline * 1.5 !important;
     }
 }

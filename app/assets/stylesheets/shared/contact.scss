@@ -30,6 +30,12 @@
     justify-content: center;
 }
 
+@media (min-width: 1800px) {
+.contact__container--methods-index-item > a {
+    font-size: $baseline * 1.5 !important;
+}
+}
+
 .contact__container--methods-index-item>h4,
 .contact__container--methods-index-item>a {
     letter-spacing: 1.1px;

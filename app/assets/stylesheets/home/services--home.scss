@@ -74,8 +74,25 @@
     justify-content: center;
     grid-template-rows: 1fr;
     width: 100%;
+    max-width: $global-max-width * 0.8;
   }
   .services-index-item__header-3--home {
     margin-top: $gutter-30 / 2;
+  }
+}
+
+@media (min-width: 1800px) {
+  .services-index__container--home {
+    max-width: none;
+  }
+  .services-index-item__container--home {
+    max-width: none;
+  }
+  .services-index-item__header-3--home {
+    font-size: $baseline * 1.5;
+  }
+  
+  .services-index-item__icon--home {
+    width: $gutter-65 * 1.5;
   }
 }

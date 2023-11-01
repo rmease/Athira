@@ -21,6 +21,7 @@ $hero-height: 60vh;
 
 .vision-obstacles-execution-container {
     height: $hero-height / 2.5;
+    max-height: 800px;
 }
 
 .hero__header-1 {
@@ -45,6 +46,7 @@ $hero-height: 60vh;
     background-size: contain;
     background-repeat: no-repeat;
     height: $hero-height / 2.5;
+    max-height: 800px;
 }
 
 @media (min-width: 370px) {

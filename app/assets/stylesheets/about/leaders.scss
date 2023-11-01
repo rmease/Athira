@@ -62,6 +62,12 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .leader-index-item__header-3 {
+        font-size: $baseline * 1.5;
+    }
+}
+
 //will need more logic if we have multiple leaders and left/right alignment
 @media (min-width: 1100px) {
     .leader-index-item__container {
